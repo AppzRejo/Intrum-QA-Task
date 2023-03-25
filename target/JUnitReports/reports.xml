@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="16.686" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Feature to verify the create user API request" name="verify the user API request is unsuccessful with invalid data format - Example #1.1" time="4.917">
+<system-out><![CDATA[
+Given Invalid user data are available from "Sheet" and 0....................passed
+When I add new user Invalid data to list....................................passed
+Then the 422 errorcode should be displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to verify the create user API request" name="verify the user API request is unsuccessful with invalid data format - Example #1.2" time="1.111">
+<system-out><![CDATA[
+Given Invalid user data are available from "Sheet" and 1....................passed
+When I add new user Invalid data to list....................................passed
+Then the 422 errorcode should be displayed..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to verify the create user API request" name="verify the user API request is unsuccessful with invalid data format - Example #1.1" time="1.713">
+<system-out><![CDATA[
+Given user data are available from "Sheet" and 0............................passed
+When I add new user data to list............................................passed
+Then the user data should be added..........................................passed
+When I update the data with duplicate values................................passed
+Then the 422 error should be displayed......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to verify the create user API request" name="verify the user API request is unsuccessful with invalid data format - Example #1.2" time="1.841">
+<system-out><![CDATA[
+Given user data are available from "Sheet" and 1............................passed
+When I add new user data to list............................................passed
+Then the user data should be added..........................................passed
+When I update the data with duplicate values................................passed
+Then the 422 error should be displayed......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to verify the create user API request" name="verify the user API request is successful - Example #1.1" time="4.201">
+<system-out><![CDATA[
+Given user data are available from "Sheet" and 0............................passed
+When I add new user data to list............................................passed
+Then the user data should be added..........................................passed
+When I update the data......................................................passed
+Then the list should be updated.............................................passed
+When I change the data......................................................passed
+When i remove data from list................................................passed
+Then the user data should be removed........................................passed
+When i get the deleted user data............................................passed
+Then the error should be displayed..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to verify the create user API request" name="verify the user API request is successful - Example #1.2" time="2.655">
+<system-out><![CDATA[
+Given user data are available from "Sheet" and 1............................passed
+When I add new user data to list............................................passed
+Then the user data should be added..........................................passed
+When I update the data......................................................passed
+Then the list should be updated.............................................passed
+When I change the data......................................................passed
+When i remove data from list................................................passed
+Then the user data should be removed........................................passed
+When i get the deleted user data............................................passed
+Then the error should be displayed..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
